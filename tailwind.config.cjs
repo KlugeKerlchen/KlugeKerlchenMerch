@@ -8,6 +8,9 @@ module.exports = {
         white: "#FFFFFF",
         black: "#000000",
       },
+      fontFamily: {
+        lora: "Lora", //TODO add backup fonts
+      },
     },
   },
   plugins: [],

@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Lora";
+    src: url("/fonts/Lora-Bold.ttf");
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: "Lora";
+    src: url("/fonts/Lora-Bold.ttf");
+    font-weight: 700;
+    font-style: italic;
+  }
+}
