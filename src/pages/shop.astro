@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Item from "../components/Item";
 
 const allItems = await Astro.glob("./shop/*.md");
 ---
@@ -10,8 +11,11 @@ const allItems = await Astro.glob("./shop/*.md");
       GIVE BEN SEYER MONEY. NOW.
     </h1>
   </div>
-  <div>
-    <!-- * Here do the items go -->
-    {allItems.map((item) => {})}
+  <div class="flex flex-wrap justify-center p-8">
+    {
+      allItems.map((item) => {
+        return <Item item={item} />;
+      })
+    }
   </div>
 </Layout>

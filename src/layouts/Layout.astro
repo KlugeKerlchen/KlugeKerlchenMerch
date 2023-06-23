@@ -19,11 +19,12 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="font-lora">
+  <body class="font-lora selection:bg-red-500">
+    <!-- ! change higlight color -->
     <header>
       <NavBar />
     </header>
-    <div class="mt-16">
+    <div class="mt-16 bg-main">
       <slot />
     </div>
     <footer class="mt-8 bg-black px-8 py-2">
