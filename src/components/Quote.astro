@@ -1,4 +1,13 @@
 ---
+const { text, author } = Astro.props;
 ---
 
-<div class="relative"></div>
+<div class="relative z-0 w-full max-w-[500px] rounded bg-gray-100 px-6 py-2">
+  <div
+    class="absolute -left-6 -top-8 -z-10 text-[8rem] text-[#2ADFA8] opacity-70"
+  >
+    "
+  </div>
+  <p class="text-[1.5rem]">{text}</p>
+  <p class="text-[2rem]">- {author}</p>
+</div>
