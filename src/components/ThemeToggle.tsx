@@ -22,7 +22,7 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={handleClick}
-      className="p-2 transition-colors duration-200 hover:bg-gray-200"
+      className="rounded p-2 transition-colors duration-200 hover:bg-white-brighter hover:shadow-sm dark:hover:bg-black-darker"
     >
       {theme === "dark" ? (
         <motion.svg
@@ -46,10 +46,7 @@ export default function ThemeToggle() {
               d="M159.188 12.4062C92.8582 12.4062 39.0938 66.1706 39.0938 132.5C39.0935 198.829 92.8581 252.594 159.188 252.594C183.875 252.594 206.823 245.148 225.906 232.375C225.036 232.397 224.188 232.5 223.312 232.5C168.084 232.5 123.312 187.729 123.312 132.5C123.312 77.2715 168.084 32.5 223.312 32.5C224.178 32.5 225.015 32.6031 225.875 32.625C206.796 19.8614 183.865 12.4062 159.188 12.4062Z"
               fill="none"
               opacity="1"
-              stroke="#000000"
-              stroke-linecap="butt"
-              stroke-linejoin="round"
-              stroke-width="20"
+              stroke="#FFFFFF"
               style={{
                 strokeWidth: 20,
                 strokeLinecap: "butt",
@@ -81,15 +78,10 @@ export default function ThemeToggle() {
                 strokeLinecap: "butt",
                 strokeLinejoin: "round",
               }}
-              d="M83.0801 132.503C83.0801 105.209 105.206 83.0828 132.5 83.0828C159.794 83.0828 181.92 105.209 181.92 132.503C181.92 159.797 159.794 181.923 132.5 181.923C105.206 181.923 83.0801 159.797 83.0801 132.503Z"
-              fill="#a1b9d6"
-              fill-opacity="0"
-              fill-rule="nonzero"
-              opacity="1"
+              d="M252.598 132.503L212.171 132.503"
+              fill="none"
+              opacity="0"
               stroke="#000000"
-              stroke-linecap="butt"
-              stroke-linejoin="bevel"
-              stroke-width="20"
             />
             <motion.path
               variants={draw}
@@ -102,9 +94,6 @@ export default function ThemeToggle() {
               fill="none"
               opacity="1"
               stroke="#000000"
-              stroke-linecap="round"
-              stroke-linejoin="bevel"
-              stroke-width="20"
             />
             <motion.path
               variants={draw}
@@ -117,9 +106,6 @@ export default function ThemeToggle() {
               fill="none"
               opacity="1"
               stroke="#000000"
-              stroke-linecap="round"
-              stroke-linejoin="bevel"
-              stroke-width="20"
             />
             <motion.path
               variants={draw}
@@ -132,9 +118,6 @@ export default function ThemeToggle() {
               fill="none"
               opacity="1"
               stroke="#000000"
-              stroke-linecap="round"
-              stroke-linejoin="bevel"
-              stroke-width="20"
             />
             <motion.path
               variants={draw}
@@ -147,9 +130,6 @@ export default function ThemeToggle() {
               fill="none"
               opacity="1"
               stroke="#000000"
-              stroke-linecap="round"
-              stroke-linejoin="bevel"
-              stroke-width="20"
             />
             <motion.path
               variants={draw}
@@ -162,9 +142,6 @@ export default function ThemeToggle() {
               fill="none"
               opacity="1"
               stroke="#000000"
-              stroke-linecap="round"
-              stroke-linejoin="bevel"
-              stroke-width="20"
             />
             <motion.path
               variants={draw}
@@ -177,9 +154,6 @@ export default function ThemeToggle() {
               fill="none"
               opacity="1"
               stroke="#000000"
-              stroke-linecap="round"
-              stroke-linejoin="bevel"
-              stroke-width="20"
             />
             <motion.path
               variants={draw}
@@ -192,9 +166,6 @@ export default function ThemeToggle() {
               fill="none"
               opacity="1"
               stroke="#000000"
-              stroke-linecap="round"
-              stroke-linejoin="bevel"
-              stroke-width="20"
             />
             <motion.path
               variants={draw}
@@ -207,9 +178,18 @@ export default function ThemeToggle() {
               fill="none"
               opacity="1"
               stroke="#000000"
-              stroke-linecap="round"
-              stroke-linejoin="bevel"
-              stroke-width="20"
+            />
+            <motion.path
+              variants={draw}
+              style={{
+                strokeWidth: 20,
+                strokeLinecap: "butt",
+                strokeLinejoin: "round",
+              }}
+              d="M83.0801 132.503C83.0801 105.209 105.206 83.0828 132.5 83.0828C159.794 83.0828 181.92 105.209 181.92 132.503C181.92 159.797 159.794 181.923 132.5 181.923C105.206 181.923 83.0801 159.797 83.0801 132.503Z"
+              fill="none"
+              opacity="1"
+              stroke="#000000"
             />
           </g>
         </motion.svg>
@@ -219,9 +199,10 @@ export default function ThemeToggle() {
 }
 
 const draw = {
-  hidden: { pathLength: 0 }, //TODO maybe remove opacity
+  hidden: { pathLength: 0, opacity: 0 }, //TODO maybe remove opacity
   visible: {
     pathLength: 1,
+    opacity: 1,
     transition: {
       pathLength: { type: "spring", duration: 1.5, bounce: 0 },
     },

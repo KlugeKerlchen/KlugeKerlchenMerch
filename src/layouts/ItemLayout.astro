@@ -1,6 +1,8 @@
 ---
 import Layout from "./Layout.astro";
 
+import Select from "../components/Select";
+
 const frontmatter = Astro.props.frontmatter;
 ---
 
@@ -8,7 +10,7 @@ const frontmatter = Astro.props.frontmatter;
   <div class="grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1">
     <div class="flex justify-center p-8">
       <div
-        class="flex aspect-square w-full max-w-[500px] items-center justify-center rounded bg-gray-100"
+        class="flex aspect-square w-full max-w-[500px] items-center justify-center rounded bg-white-brighter dark:bg-black-darker"
       >
         <!-- image of product -->
       </div>
@@ -16,16 +18,31 @@ const frontmatter = Astro.props.frontmatter;
     <div class="flex flex-col max-md:items-center md:mx-auto">
       <!-- selection of size -->
       <h2 class="mb-4 text-[2rem]">Select your size</h2>
-      <div class="mb-8 flex flex-wrap gap-4">
-        <div class="rounded bg-gray-100 px-3 py-1 hover:cursor-pointer">
+      <!-- <div class="mb-8 flex flex-wrap gap-4">
+        <div
+          class="rounded bg-gray-100 px-3 py-1 hover:cursor-pointer dark:bg-black-darker"
+        >
           Jihad
         </div>
-        <div class="rounded bg-gray-100 px-3 py-1 hover:cursor-pointer">XS</div>
-        <div class="rounded bg-gray-100 px-3 py-1 hover:cursor-pointer">S</div>
-        <div class="rounded bg-gray-100 px-3 py-1 hover:cursor-pointer">M</div>
-      </div>
+        <div
+          class="rounded bg-gray-100 px-3 py-1 hover:cursor-pointer dark:bg-black-darker"
+        >
+          XS
+        </div>
+        <div
+          class="rounded bg-gray-100 px-3 py-1 hover:cursor-pointer dark:bg-black-darker"
+        >
+          S
+        </div>
+        <div
+          class="rounded bg-gray-100 px-3 py-1 hover:cursor-pointer dark:bg-black-darker"
+        >
+          M
+        </div>
+      </div> -->
+      <Select client:load />
       <button
-        class="block w-fit rounded bg-[#2ADFA8] px-3 py-2 text-[1.5rem] text-[#000000] hover:cursor-pointer"
+        class="block w-fit rounded bg-main-light px-3 py-2 text-[1.5rem] text-[#000000] hover:cursor-pointer dark:bg-main-dark"
         >Request Item</button
       >
     </div>
