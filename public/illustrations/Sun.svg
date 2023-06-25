@@ -5,13 +5,13 @@
 <defs/>
 <g id="Ebene-1">
 <path d="M83.0801 132.503C83.0801 105.209 105.206 83.0828 132.5 83.0828C159.794 83.0828 181.92 105.209 181.92 132.503C181.92 159.797 159.794 181.923 132.5 181.923C105.206 181.923 83.0801 159.797 83.0801 132.503Z" fill="#a1b9d6" fill-opacity="0" fill-rule="nonzero" opacity="1" stroke="#000000" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="20"/>
-<path d="M252.598 132.503L212.171 132.503" fill="none" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="20"/>
-<path d="M217.42 217.424L188.834 188.838" fill="none" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="20"/>
-<path d="M132.5 252.6L132.5 212.174" fill="none" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="20"/>
-<path d="M47.5762 217.424L76.162 188.838" fill="none" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="20"/>
+<path d="M212.171 132.503L252.598 132.503" fill="none" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="20"/>
+<path d="M188.834 188.838L217.42 217.424" fill="none" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="20"/>
+<path d="M132.5 212.174L132.5 252.6" fill="none" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="20"/>
+<path d="M76.162 188.838L47.5762 217.424" fill="none" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="20"/>
 <path d="M132.5 52.826L132.5 12.3996" fill="none" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="20"/>
 <path d="M188.838 76.162L217.424 47.5762" fill="none" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="20"/>
-<path d="M12.4023 123.509L52.8288 123.509" fill="none" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="20"/>
-<path d="M53.9356 41.2207L82.5214 69.8065" fill="none" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="20"/>
+<path d="M52.8288 123.509L12.4023 123.509" fill="none" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="20"/>
+<path d="M82.5214 69.8065L53.9356 41.2207" fill="none" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="20"/>
 </g>
 </svg>

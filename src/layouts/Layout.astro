@@ -15,12 +15,12 @@ const { title } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
   <body
-    class="bg-white-normal font-lora selection:bg-red-500 dark:bg-black-normal dark:text-[#FFFFFF]"
+    class="bg-white-normal font-lora selection:bg-second-light dark:bg-black-normal dark:text-white-normal dark:selection:bg-second-dark"
   >
     <!-- ! change higlight color -->
     <header>
@@ -30,9 +30,58 @@ const { title } = Astro.props;
       <slot />
     </div>
     <footer
-      class="mt-8 bg-black-normal px-8 py-2 text-white-normal dark:bg-black-darker"
+      class="relative mt-24 bg-black-normal px-8 py-2 pt-24 text-white-normal dark:bg-black-darker"
     >
-      <h2 class="text-white text-[6rem]">BEN SEYER</h2>
+      <div class="flex gap-4 max-md:flex-col max-md:items-center">
+        <h2 class="text-white text-[3rem] md:mr-12 lg:text-[5rem]">
+          BEN SEYER
+        </h2>
+        <div class="max-md:mb-24 md:mt-8">
+          <a
+            href="https://github.com/KlugeKerlchen"
+            class="flex items-center gap-2 underline underline-offset-2"
+          >
+            <img
+              src="/logos/github.svg"
+              alt="github"
+              width="20px"
+              height="19.59px"
+            />Kluge Kerlchen</a
+          >
+          <div class="flex items-center gap-2">
+            <img
+              src="/logos/discord.svg"
+              alt="discord"
+              width="20px"
+              height="20px"
+            />neb10
+          </div>
+          <div class="flex items-center gap-2">
+            <img
+              src="/logos/gmail.svg"
+              alt="gmail"
+              width="20px"
+              height="20px"
+            />klugekerlchen@gmail.com
+          </div>
+        </div>
+        <div class="rounded bg-[#FFFFFF] p-1 md:ml-auto">
+          <img
+            width="200px"
+            src="https://chart.googleapis.com/chart?cht=qr&chl=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DdQw4w9WgXcQ&chs=180x180&choe=UTF-8&chld=L|2"
+            alt="qr code"
+          />
+        </div>
+      </div>
+      <!-- <div class="absolute -top-[70px] right-0 fill-black-normal">
+        <img width="1920px" class="" src="/illustrations/Waves.svg" />
+      </div> -->
+      <div class="absolute -top-[70px] right-0">
+        <div
+          class="h-[70px] w-[1920px] bg-black-normal [-webkit-mask:url('/illustrations/Waves.svg')_no-repeat_center] [mask:url('/illustrations/Waves.svg')_no-repeat_center] dark:bg-black-darker"
+        >
+        </div>
+      </div>
     </footer>
   </body>
 </html>

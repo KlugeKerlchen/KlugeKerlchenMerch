@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Vectornator (http://vectornator.io/) -->
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 1920 70" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs/>
+<clipPath id="ArtboardFrame">
+<rect height="70" width="1920" x="0" y="0"/>
+</clipPath>
+<g clip-path="url(#ArtboardFrame)" id="Ebene-1">
+<path d="M44.8125 0.00552947C28.6724 0.0350756 13.8462 0.190016 0 0.413566L0 70L1920 70L1920 36.6835C1871.21 43.2656 1812.55 51.2574 1699.56 60.2848C1532.45 73.6366 1159.31 36.3014 927.313 23.4514C695.312 10.6015 743.313 37.9594 623.313 42.9336C516.149 47.3756 467.792 21.3398 294.938 8.27637C274.232 6.71157 251.846 5.32009 227.25 4.20248C155.396 0.937643 94.6817-0.0857357 44.8125 0.00552947Z" fill-rule="nonzero" fill="#000000" opacity="1" stroke="#a1b9d6" stroke-linecap="butt" stroke-linejoin="round" stroke-opacity="0" stroke-width="20"/>
+</g>
+</svg>

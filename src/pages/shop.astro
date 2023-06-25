@@ -14,7 +14,7 @@ const allItems = await Astro.glob("./shop/*.md");
   <div class="flex flex-wrap justify-center p-8">
     {
       allItems.map((item) => {
-        return <Item item={item} />;
+        return <Item item={item} client:load />;
       })
     }
   </div>

@@ -6,8 +6,8 @@ import Quote from "../components/Quote.astro";
 
 <Layout title="Kluge Kerlchen Merch Sachen und so">
   <main>
-    <div>
-      <h1 class="mb-4 text-center text-[2rem] lg:text-[4rem]">
+    <div class="relative mb-16">
+      <h1 class="mb-4 text-center text-[2.5rem] leading-[1.25] lg:text-[4rem]">
         Ben Seyer's wonderful Shop™
       </h1>
       <p class="mb-20 text-center text-[1.5rem]">
@@ -22,8 +22,33 @@ import Quote from "../components/Quote.astro";
         href="/shop">Shop for Merch</a
       > -->
       <Button text={"Shop for Merch"} client:load />
-      <div class="mx-auto mt-12 w-fit">
+      <!-- <div class="mx-auto mt-16 w-fit">
         <Quote text="Hallo ok nein sorry" author="Ben Seyer" />
+      </div> -->
+      <div class="absolute right-0 top-0">
+        <img src="/illustrations/Decoration.svg" width="500px" />
+      </div>
+    </div>
+    <div>
+      <h2 class="mb-4 text-center text-[2rem] lg:text-[3rem]">
+        Our most bought Items
+      </h2>
+      <div class="flex justify-center"></div>
+    </div>
+    <div>
+      <h2 class="mb-4 text-center text-[2rem] lg:text-[3rem]">
+        Some words from the Founder
+      </h2>
+      <div
+        class="mx-auto flex w-full max-w-[1000px] flex-wrap justify-center gap-12 p-12"
+      >
+        <Quote text="öffne Suchmaschine" author="Ben Seyer" />
+        <Quote text="Batman" author="Ben Seyer" />
+        <Quote
+          text="Gibt es irgendwelche junge Kinder, die man nutzen könnte?"
+          author="Ben Seyer"
+        />
+        <Quote text="scharfe Chips sind scharf" author="Ben Seyer" />
       </div>
     </div>
   </main>

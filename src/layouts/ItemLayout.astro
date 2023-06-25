@@ -2,49 +2,32 @@
 import Layout from "./Layout.astro";
 
 import Select from "../components/Select";
+import RequestButton from "../components/RequestButton";
 
 const frontmatter = Astro.props.frontmatter;
 ---
 
 <Layout title={frontmatter.name}>
   <div class="grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1">
-    <div class="flex justify-center p-8">
+    <div class="flex flex-col items-center p-8">
+      <h1 class="mb-2 text-[2rem]">{frontmatter.name}</h1>
       <div
-        class="flex aspect-square w-full max-w-[500px] items-center justify-center rounded bg-white-brighter dark:bg-black-darker"
+        class="flex aspect-square w-full max-w-[500px] items-center justify-center rounded bg-white-brighter bg-[url('/illustrations/Background.svg')] dark:bg-black-darker"
       >
-        <!-- image of product -->
+        <img
+          src={`/item-images/${frontmatter.images[0]}`}
+          alt={frontmatter.name}
+        />
       </div>
     </div>
-    <div class="flex flex-col max-md:items-center md:mx-auto">
-      <!-- selection of size -->
-      <h2 class="mb-4 text-[2rem]">Select your size</h2>
-      <!-- <div class="mb-8 flex flex-wrap gap-4">
-        <div
-          class="rounded bg-gray-100 px-3 py-1 hover:cursor-pointer dark:bg-black-darker"
-        >
-          Jihad
-        </div>
-        <div
-          class="rounded bg-gray-100 px-3 py-1 hover:cursor-pointer dark:bg-black-darker"
-        >
-          XS
-        </div>
-        <div
-          class="rounded bg-gray-100 px-3 py-1 hover:cursor-pointer dark:bg-black-darker"
-        >
-          S
-        </div>
-        <div
-          class="rounded bg-gray-100 px-3 py-1 hover:cursor-pointer dark:bg-black-darker"
-        >
-          M
-        </div>
-      </div> -->
+    <div class="flex flex-col max-md:items-center md:mt-24">
+      <h2 class="text-[2rem] max-md:mt-4">Select your size</h2>
       <Select client:load />
-      <button
+      <!-- <button
         class="block w-fit rounded bg-main-light px-3 py-2 text-[1.5rem] text-[#000000] hover:cursor-pointer dark:bg-main-dark"
         >Request Item</button
-      >
+      > -->
+      <RequestButton client:load />
     </div>
   </div>
 </Layout>

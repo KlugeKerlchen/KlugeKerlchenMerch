@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 export default function Select() {
-  const [selected, setSelected] = useState("");
+  const [selected, setSelected] = useState("M");
   const items = [
     { id: "Jihad" },
     { id: "XS" },
@@ -21,7 +21,6 @@ export default function Select() {
           key={item.id}
           onClick={() => setSelected(item.id)}
         >
-          {/* <Circle>{item.photo}</Circle> */}
           <button
             onClick={(e) => {
               setSelected((e.target as HTMLButtonElement).innerText);
