@@ -2,11 +2,21 @@
 import Layout from "../layouts/Layout.astro";
 import Button from "../components/Button";
 import Quote from "../components/Quote.astro";
+
+import ScrollVelocity from "../components/ScrollVelocity";
 ---
 
 <Layout title="Kluge Kerlchen Merch Sachen und so">
-  <main>
-    <div class="relative mb-16">
+  <main class="relative overflow-hidden">
+    <div
+      class="absolute left-[1250px] top-8 -z-10 h-[500px] w-[500px] bg-main-light [-webkit-mask:url('/blobs/blob_1.svg')_no-repeat_center] [mask:url('/blobs/blob_1.svg')_no-repeat_center] dark:bg-main-dark"
+    >
+    </div>
+    <div
+      class="absolute right-[1300px] top-8 -z-10 h-[500px] w-[500px] bg-main-light [-webkit-mask:url('/blobs/blob_2.svg')_no-repeat_center] [mask:url('/blobs/blob_2.svg')_no-repeat_center] dark:bg-main-dark"
+    >
+    </div>
+    <div class="relative mb-16 p-6">
       <h1 class="mb-4 text-center text-[2.5rem] leading-[1.25] lg:text-[4rem]">
         Ben Seyer's wonderful Shop™
       </h1>
@@ -25,9 +35,9 @@ import Quote from "../components/Quote.astro";
       <!-- <div class="mx-auto mt-16 w-fit">
         <Quote text="Hallo ok nein sorry" author="Ben Seyer" />
       </div> -->
-      <div class="absolute right-0 top-0">
+      <!-- <div class="absolute right-0 top-0">
         <img src="/illustrations/Decoration.svg" width="500px" />
-      </div>
+      </div> -->
     </div>
     <div>
       <h2 class="mb-4 text-center text-[2rem] lg:text-[3rem]">
@@ -51,5 +61,6 @@ import Quote from "../components/Quote.astro";
         <Quote text="scharfe Chips sind scharf" author="Ben Seyer" />
       </div>
     </div>
+    <ScrollVelocity client:load />
   </main>
 </Layout>
