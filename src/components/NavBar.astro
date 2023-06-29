@@ -3,7 +3,7 @@ import ThemeToggle from "./ThemeToggle";
 ---
 
 <nav class="flex h-16 items-center px-4">
-  <a href="/" class="mr-auto flex gap-2 text-[2rem]"
+  <a href="/" class="flex gap-2 text-[2rem]"
     ><img
       src="/logos/Kluge_Kerlchen.png"
       width="50px"
@@ -14,7 +14,23 @@ import ThemeToggle from "./ThemeToggle";
       width="50px"
     />Merch</a
   >
-  <div>
+  <!-- todo add a toolpick that says "This website is currently in version 0.69" -->
+  <!-- <div
+    class="ml-6 rounded bg-main-light px-2 py-1 text-[1.25rem] text-black-darker dark:bg-main-dark"
+  >
+    alpha
+  </div> -->
+  <div
+    class="group relative ml-6 rounded bg-main-light px-2 py-1 text-[1.25rem] text-black-darker hover:cursor-pointer dark:bg-main-dark"
+  >
+    alpha
+    <div
+      class="absolute inset-x-0 -bottom-12 mx-auto hidden w-[400px] rounded bg-main-light px-1.5 py-1 text-black-darker transition-opacity group-hover:block dark:bg-main-dark"
+    >
+      This website is currently in version 0.69
+    </div>
+  </div>
+  <div class="ml-auto">
     <ThemeToggle client:load />
   </div>
 </nav>
