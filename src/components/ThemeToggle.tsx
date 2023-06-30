@@ -23,6 +23,7 @@ export default function ThemeToggle() {
     <button
       onClick={handleClick}
       className="rounded p-2 transition-colors duration-200 hover:bg-white-brighter hover:shadow-sm dark:hover:bg-black-darker"
+      aria-label="Toggle Theme"
     >
       {theme === "dark" ? (
         <motion.svg
